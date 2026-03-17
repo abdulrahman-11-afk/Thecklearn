@@ -28,7 +28,7 @@ export default function Buycourse() {
       </section>
       <section className="px-12 pb-20 flex gap-8 items-start">
         <div className="flex flex-col gap-10 w-[760px]">
-          <video className="w-full min-h-[400px] rounded-2xl shadow-lg" controls><source src="/Vikings.S06E03.(NKIRI.COM).mkv" type="video/mp4" /></video>
+          <video className="w-full min-h-[400px] rounded-2xl shadow-lg" controls><source src="#" type="video/mp4" /></video>
           <div>
             <h2 className="text-2xl font-semibold mb-4">
               What you will Learn
