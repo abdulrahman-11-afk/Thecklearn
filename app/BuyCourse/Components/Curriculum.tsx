@@ -36,6 +36,18 @@ export default function Curriculum() {
       duration: "12m",
       lessons: [],
     },
+     {
+      title: "Secrets of Making Money Freelancing",
+      lectures: 4,
+      duration: "12m",
+      lessons: [],
+    },
+     {
+      title: "Advanced",
+      lectures: 4,
+      duration: "12m",
+      lessons: [],
+    },
   ];
 
   const toggle = (index: number) => {
@@ -53,12 +65,13 @@ export default function Curriculum() {
             onClick={() => toggle(index)}
             className="flex justify-between items-center p-4 cursor-pointer"
           >
-             {open === index ? <FaChevronUp /> : <FaChevronDown />}
             <div className="flex items-center gap-3">
-
-              <span className="text-sm font-medium">
+               {open === index ? <FaChevronUp /> : <FaChevronDown />}
+             <span className="text-sm font-medium">
                 {section.title}
               </span>
+            </div>
+            <div className="flex items-center gap-3">
 
               <span className="text-xs text-gray-500">
                 {section.lectures} lectures
