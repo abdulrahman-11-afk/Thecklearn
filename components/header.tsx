@@ -20,7 +20,7 @@ export default function Header() {
                         height={35}
                         className="cursor-pointer"
                     />
-                   <Link href="/Authentications/SignUp"> <button className="cursor-pointer">Sign Up</button></Link>
+                   <Link href="/Authentications/Register"> <button className="cursor-pointer">Sign Up</button></Link>
                     <button className="bg-[#FF6B00] text-white hover:scale-105 duration-500 transition-transform cursor-pointer w-[80px] h-[37px] text-[15px] rounded-md">
                         Log in
                     </button>

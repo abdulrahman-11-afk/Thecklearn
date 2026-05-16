@@ -3,7 +3,7 @@ import Carousel from "./CarouselSection"
 export default function Herosection() {
     return (
         <section>
-            <div id="hero" className="md:flex md:flex-row flex-col scroll-mt-40 md:mx-12 flex items-center justify-between pt-36">
+            <div id="hero" className="md:flex md:flex-row flex-col md:mx-12 flex items-center justify-between pt-36">
                 <div className="flex gap-2 md:gap-y-7 flex-col">
                     <p className="md:text-[37px] text-[24px] md:text-left text-center md:leading-[45px]">
                         A Smarter Way to Learn Tech.

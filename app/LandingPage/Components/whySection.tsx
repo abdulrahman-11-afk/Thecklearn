@@ -1,9 +1,9 @@
 import Image from "next/image"
 export default function Why() {
     return (
-        <section className="flex items-center  pt-12 justify-center flex-col">
+        <section className="flex items-center pt-12 justify-center flex-col px-4">
             <div className="flex flex-col items-center text-center gap-y-4">
-                <p className="md:text-[28px] text-[19px] font-semibold ">
+                <p className="md:text-[28px] text-[19px] font-semibold">
                     Why Learn with
                     <span className="text-[#FF6B00]"> TheckLearn</span>
                 </p>
@@ -13,68 +13,59 @@ export default function Why() {
                     Enroll and Kickstart your Tech Career
                 </p>
             </div>
-            <div className="flex flex-col gap-8  mt-15">
-                <div className="flex items-center flex-wrap gap-x-8">
-                    <div className="bg-[#F8F9FA] hover:scale-103 hover:shadow-lg hover:bg-gray-200 duration-400 w-[350px] rounded-2xl h-[256px] pl-10 flex flex-col justify-center">
-                        <p className="text-[20px] font-semibold">
+            <div className="flex flex-col gap-8 mt-12 w-full max-w-[1140px]">
+                <div className="flex items-center justify-center flex-wrap gap-6">
+                    <div className="bg-[#F8F9FA] hover:scale-[1.03] hover:shadow-lg hover:bg-gray-200 duration-300 w-full sm:w-[350px] rounded-2xl h-[256px] px-8 flex flex-col justify-center">
+                        <p className="text-[18px] md:text-[20px] font-semibold">
                             Learn Smarter, Not Harder
                         </p>
-                        <p className="mt-3">
-                            Hours of meticulously designed courses,
-                            <br />
-                            created and taught by industry-leading <br />
-                            professionals.
+                        <p className="mt-3 text-[14px] md:text-[15px] leading-relaxed text-[#6F6A6A]">
+                            Hours of meticulously designed courses, created and taught by industry-leading professionals.
                         </p>
                     </div>
-                    <div className="w-[350px] rounded-2xl h-[256px]">
+                    <div className="w-full sm:w-[350px] rounded-2xl h-[256px] overflow-hidden">
                         <Image
                             src="/laptop.png"
-                            alt="user"
-                            width={300}
-                            height={200}
-                            className="w-full hover:scale-103 duration-400"
+                            alt="laptop"
+                            width={350}
+                            height={256}
+                            className="w-full h-full object-cover hover:scale-[1.03] duration-300 rounded-2xl"
                         />
                     </div>
-                    <div className="bg-[#F8F9FA] hover:shadow-lg hover:scale-103 hover:bg-gray-200 duration-400 w-[350px] rounded-2xl h-[256px] pl-10 flex flex-col justify-center">
-                        <p className="text-[20px] font-semibold">
+                    <div className="bg-[#F8F9FA] hover:shadow-lg hover:scale-[1.03] hover:bg-gray-200 duration-300 w-full sm:w-[350px] rounded-2xl h-[256px] px-8 flex flex-col justify-center">
+                        <p className="text-[18px] md:text-[20px] font-semibold">
                             Learn Smarter, Not Harder
                         </p>
-                        <p className="mt-3">
-                            Hours of meticulously designed courses,
-                            <br />
-                            created and taught by industry-leading <br />
-                            professionals.
+                        <p className="mt-3 text-[14px] md:text-[15px] leading-relaxed text-[#6F6A6A]">
+                            Hours of meticulously designed courses, created and taught by industry-leading professionals.
                         </p>
                     </div>
                 </div>
-                <div className="flex items-center flex-wrap gap-x-8">
-                    <div className="w-[350px] rounded-2xl h-[256px]">
+                <div className="flex items-center justify-center flex-wrap gap-6">
+                    <div className="w-full sm:w-[350px] rounded-2xl h-[256px] overflow-hidden">
                         <Image
                             src="/image2.png"
-                            alt="user"
-                            width={300}
-                            height={200}
-                            className="w-full hover:scale-103 duration-400"
+                            alt="image2"
+                            width={350}
+                            height={256}
+                            className="w-full h-full object-cover hover:scale-[1.03] duration-300 rounded-2xl"
                         />
                     </div>
-                    <div className="bg-[#F8F9FA] hover:scale-103 hover:shadow-lg hover:bg-gray-200 duration-400 w-[350px] rounded-2xl h-[256px] pl-10 flex flex-col justify-center">
-                        <p className="text-[20px] font-semibold">
+                    <div className="bg-[#F8F9FA] hover:scale-[1.03] hover:shadow-lg hover:bg-gray-200 duration-300 w-full sm:w-[350px] rounded-2xl h-[256px] px-8 flex flex-col justify-center">
+                        <p className="text-[18px] md:text-[20px] font-semibold">
                             Learn Smarter, Not Harder
                         </p>
-                        <p className="mt-3">
-                            Hours of meticulously designed courses,
-                            <br />
-                            created and taught by industry-leading <br />
-                            professionals.
+                        <p className="mt-3 text-[14px] md:text-[15px] leading-relaxed text-[#6F6A6A]">
+                            Hours of meticulously designed courses, created and taught by industry-leading professionals.
                         </p>
                     </div>
-                    <div className="w-[350px] rounded-2xl h-[256px]">
+                    <div className="w-full sm:w-[350px] rounded-2xl h-[256px] overflow-hidden">
                         <Image
                             src="/image3.png"
-                            alt="user"
-                            width={300}
-                            height={200}
-                            className="w-full hover:scale-103 duration-400"
+                            alt="image3"
+                            width={350}
+                            height={256}
+                            className="w-full h-full object-cover hover:scale-[1.03] duration-300 rounded-2xl"
                         />
                     </div>
                 </div>

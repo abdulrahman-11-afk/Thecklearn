@@ -3,7 +3,7 @@ import { useState } from "react";
 import { FaChevronDown, FaChevronUp } from "react-icons/fa";
 
 export default function Curriculum() {
-  const [open, setOpen] = useState<number | null>(0);
+  const [open, setOpen] = useState<number | null>(null);
 
   const sections = [
     {
@@ -34,7 +34,13 @@ export default function Curriculum() {
       title: "Web Development (Webflow)",
       lectures: 4,
       duration: "12m",
-      lessons: [],
+      lessons: [
+         "What's Webflow?",
+        "Sign up in Webflow",
+        "Webflow Terms & Conditions",
+        "Teaser of Webflow",
+        "Practice Project",
+      ],
     },
      {
       title: "Secrets of Making Money Freelancing",

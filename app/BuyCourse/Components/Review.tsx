@@ -10,7 +10,7 @@ export default function Review() {
                 </h2>
             </div >
             <div className='flex flex-col gap-8'>
-                <div className='w-[700px] h-[204px] bg-[#F8F9FA] rounded-lg px-5 py-8'>
+                <div className='w-[700px] h-[204px] bg-[#F8F9FA] hover:shadow-lg shadow-sm transition-transform duration-400 hover:scale-101 rounded-lg px-5 py-8'>
                     <div className="flex items-center gap-4">
                         <Image
                             src="/Ellipse 21981.png"
