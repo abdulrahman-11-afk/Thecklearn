@@ -3,12 +3,9 @@ import Link from "next/link"
 export default function Footer() {
     return (
         <footer id="footer" className="bg-[#0C1518] mt-18 py-16">
-            {/* Desktop: side-by-side | Mobile: stacked centered */}
-            <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left md:justify-evenly md:gap-12 gap-10 px-6">
-
-                {/* Newsletter block */}
+            <div className="flex flex-col items-center text-center md:flex-row md:items-start md:text-left md:justify-evenly md:gap-12 gap-10 px-6 ">
                 <div className="text-white flex flex-col gap-5 items-center md:items-start max-w-[300px]">
-                    <p className="text-[28px] md:text-[32px] font-bold leading-tight">
+                    <p className="text-[24px] md:text-[28px] leading-tight">
                         GET OUR LATEST <br />NEWS AND UPDATES
                     </p>
                     <p className="text-gray-400 text-[13px]">
@@ -19,7 +16,6 @@ export default function Footer() {
                     </button>
                 </div>
 
-                {/* Quick Links */}
                 <nav className="text-[#E6E6E6] text-[14px] flex flex-col items-center md:items-start gap-1">
                     <p className="text-[#8F8E8A] text-[11px] tracking-widest uppercase mb-3">Quick Links</p>
                     <Link href="#programs"><p className="cursor-pointer hover:text-[#FF6B00] transition-colors">Programs</p></Link>
@@ -29,7 +25,6 @@ export default function Footer() {
                     <p className="cursor-pointer hover:text-[#FF6B00] transition-colors">Contacts</p>
                 </nav>
 
-                {/* Utility Pages */}
                 <div className="text-[#E6E6E6] text-[14px] flex flex-col items-center md:items-start gap-1">
                     <p className="text-[#8F8E8A] text-[11px] tracking-widest uppercase mb-3">Utility Pages</p>
                     <p>Password protected</p>
@@ -39,19 +34,16 @@ export default function Footer() {
                     <p>license</p>
                 </div>
 
-                {/* Contact */}
                 <div className="text-[#E6E6E6] text-[14px] flex flex-col items-center md:items-start gap-1">
                     <p className="text-[#8F8E8A] text-[11px] tracking-widest uppercase mb-3">Contact</p>
                     <p>Thecklearnacademy@gmail.com</p>
                 </div>
             </div>
 
-            {/* Divider */}
             <div className="text-[#E6E6E6] px-6 md:px-14 py-10">
                 <hr className="border-[#2a2a2a]" />
             </div>
 
-            {/* Bottom bar: stacked on mobile, row on desktop */}
             <div className="flex flex-col items-center gap-4 md:flex-row md:justify-between px-6 md:px-14">
                 <p className="text-[#8F8E8A] text-[13px]">Privacy</p>
                 <div className="flex items-center justify-evenly w-[140px] h-[40px] bg-[#272725] rounded-md">

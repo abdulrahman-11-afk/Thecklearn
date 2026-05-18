@@ -25,13 +25,11 @@ export default function Banner() {
                 </div>
             )}
 
-            {/* Header */}
             <header className="flex items-center justify-between md:px-12 px-5 h-20 w-full bg-white shadow-[0_1px_4px_-1px_rgba(0,0,0,0.3)]">
                 <Link href="#hero">
                     <Image src="/logo1.png" alt="Logo" width={130} height={20} className="md:w-38 md:h-10 w-28" />
                 </Link>
 
-                {/* Desktop Nav */}
                 <nav className="md:flex hidden items-center gap-x-6">
                     <Link href="#programs"><p className="cursor-pointer hover:text-[#FF6B00] transition-colors">Programs</p></Link>
                     <Link href="#About"><p className="cursor-pointer hover:text-[#FF6B00] transition-colors">About</p></Link>
@@ -48,7 +46,7 @@ export default function Banner() {
                     </button>
                 </div>
 
-                {/* Mobile Hamburger */}
+
                 <button
                     className="md:hidden text-black text-3xl leading-none cursor-pointer"
                     aria-label="Toggle menu"
@@ -58,7 +56,6 @@ export default function Banner() {
                 </button>
             </header>
 
-            {/* Mobile Dropdown */}
             <div
                 className={`md:hidden bg-white shadow-lg overflow-hidden transition-all duration-300 ease-in-out ${
                     menuOpen ? "max-h-[400px] opacity-100" : "max-h-0 opacity-0"
@@ -80,10 +77,10 @@ export default function Banner() {
                 </nav>
                 <div className="flex items-center gap-4 px-6 py-5">
                     <Image src="/mdi-light_cart.png" alt="cart" width={28} height={28} className="cursor-pointer" />
-                    <button className="cursor-pointer text-[15px]">Sign Up</button>
-                    <button className="bg-[#FF6B00] text-white hover:scale-105 duration-300 transition-transform cursor-pointer w-[80px] h-[37px] text-[15px] rounded-md">
+                     <Link href="/Authentications/register"> <button className="cursor-pointer">Sign Up</button></Link>
+                    <Link href="/Authentications/Login"> <button className="bg-[#FF6B00] text-white hover:scale-105 duration-500 transition-transform cursor-pointer w-[80px] h-[37px] text-[15px] rounded-md">
                         Log in
-                    </button>
+                    </button></Link>
                 </div>
             </div>
         </div>

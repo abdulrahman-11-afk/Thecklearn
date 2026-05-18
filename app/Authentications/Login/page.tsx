@@ -24,14 +24,7 @@ export default function Login() {
                             <FcGoogle className='text-lg' />
                             Continue with Google
                         </button>
-                        <div className='w-[180px] h-[45px] bg-[#F5F5F5] flex items-center justify-center'>
-                            <div className='bg-[#FF6B00] text-white text-sm w-[70px] h-[25px] flex items-center'>
-                                Login
-                            </div>
-                            <div>
-                                <p>Register</p>
-                            </div>
-                        </div>
+                        
                         <input
                             type='email'
                             placeholder='Email'

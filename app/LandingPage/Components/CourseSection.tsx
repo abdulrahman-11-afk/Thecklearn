@@ -1,41 +1,41 @@
 import Image from "next/image"
 import Link from "next/link"
 export default function Course() {
-    const courses = [
-        {
-            id: 1,
-            image: "/Frame 2147258477.png",
-            title: "Complete Html, Css, Javascript Course Frontend Web Development Course.",
-            category: "Web Development",
-            students: 100,
-            instructor: "Peter Ayeni",
-            oldPrice: "N50,000",
-            price: "N10,000",
-            link: "/BuyCourse"
-        },
-        {
-            id: 2,
-            image: "/Frame 2147258477 (1).png",
-            title: "Complete Html, Css, Javascript Course Frontend Web Development Course.",
-            category: "Product Design",
-            students: 100,
-            instructor: "Oluwasegun",
-            oldPrice: "N50,000",
-            price: "N30,000",
-            link: "/BuyCourse"
-        },
-        {
-            id: 3,
-            image: "/Frame 2147258477 (2).png",
-            title: "Complete Html, Css, Javascript Course Frontend Web Development Course.",
-            category: "Data Analytics",
-            students: 100,
-            instructor: "Bidemi",
-            oldPrice: "N50,000",
-            price: "N30,000",
-            link: "/BuyCourse"
-        }
-    ];
+   const courses = [
+    {
+        id: 1,
+        image: "/Frame 2147258477.png",
+        title: "Complete Html, Css, Javascript Course Frontend Web Development Course.",
+        category: "Web Development",
+        students: 100,
+        instructor: "Peter Ayeni",
+        oldPrice: "N50,000",
+        price: "N10,000",
+        link: "/BuyCourse/web-development"   // ← matches id in courseData.ts
+    },
+    {
+        id: 2,
+        image: "/Frame 2147258477 (1).png",
+        title: "Complete UI/UX Design Course From Wireframes to World-Class Products.",
+        category: "Product Design",
+        students: 100,
+        instructor: "Oluwasegun",
+        oldPrice: "N50,000",
+        price: "N30,000",
+        link: "/BuyCourse/ui-ux-design"      // ← matches id in courseData.ts
+    },
+    {
+        id: 3,
+        image: "/Frame 2147258477 (2).png",
+        title: "Complete Data Analytics Course From Raw Data to Powerful Insights.",
+        category: "Data Analytics",
+        students: 100,
+        instructor: "Bidemi",
+        oldPrice: "N50,000",
+        price: "N30,000",
+        link: "/BuyCourse/data-analytics"    // ← matches id in courseData.ts
+    }
+];
     return (
         <section id="programs" className="scroll-mt-20 min-h-[130vh] bg-[#F8F9FA]">
             <div className="flex flex-col pt-12 items-center text-center gap-y-4 px-4">
@@ -89,7 +89,7 @@ export default function Course() {
 
                         <div className="flex items-center justify-between flex-wrap gap-2">
                             <p className="text-[14px] md:text-[16px]">{course.instructor}</p>
-                            <p className="text-[18px] md:text-[20px] font-semibold">{course.price}</p>
+                            <p className="text-[18px] md:text-[20px] ">{course.price}</p>
                         </div>
 
                         <Link href={course.link}>
