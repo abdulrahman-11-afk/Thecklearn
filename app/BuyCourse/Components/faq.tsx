@@ -1,9 +1,10 @@
 "use client"
-import { useState, useEffect } from "react";
+import { useState } from "react";
+
 export default function Faq() {
     const faqs = [
         {
-            q: "Are the videos downloadable ?",
+            q: "Are the videos downloadable?",
             a: "Yes! Our courses are designed for beginners and guide you step-by-step to advanced levels.",
         },
         {
@@ -15,41 +16,42 @@ export default function Faq() {
             a: "You can deploy using platforms like Vercel, Netlify, or cloud services like AWS and Firebase.",
         },
         {
-            q: "How do i Purchase this Course ?",
+            q: "How do I Purchase this Course?",
             a: "Yes, you get lifetime access to all your purchased courses.",
         },
     ];
+
     const [openIndex, setOpenIndex] = useState<number | null>(null);
+
     return (
-        <section
-            className="scroll-mt-12 pt-18">
-            <div className="flex flex-col items-center text-center gap-y-4" >
-                <h2 className="text-[28px] ">
+        /* extra bottom padding on mobile so the sticky buy bar doesn't cover content */
+        <section className="scroll-mt-12 pt-12 pb-24 md:pb-12">
+            <div className="flex flex-col items-center text-center gap-y-4">
+                <h2 className="text-[20px] md:text-[28px] font-semibold">
                     Frequently Asked Questions
                 </h2>
-            </div >
-            <div className="px-6 flex flex-col gap-8 mt-15">
+            </div>
+
+            <div className="px-0 md:px-6 flex flex-col gap-0 mt-8">
                 {faqs.map((faq, index) => (
-                    <div key={index} className=" pb-3">
+                    <div key={index} className="border-b border-gray-100 py-4">
                         <div
-                            className="flex items-center justify-between gap-26 cursor-pointer"
-                            onClick={() =>
-                                setOpenIndex(openIndex === index ? null : index)
-                            }
+                            className="flex items-center justify-between gap-4 cursor-pointer"
+                            onClick={() => setOpenIndex(openIndex === index ? null : index)}
                         >
-                            <p>{faq.q}</p>
-                            <p className="text-[29px] text-[#566273]">
+                            <p className="text-[14px] md:text-[15px] pr-2 leading-snug">{faq.q}</p>
+                            <p className="text-[24px] md:text-[29px] text-[#566273] flex-shrink-0">
                                 {openIndex === index ? "−" : "+"}
                             </p>
                         </div>
                         {openIndex === index && (
-                            <p className="mt-3 text-md text-gray-500 transition-ease-in duration-600">
+                            <p className="mt-3 text-[13px] md:text-[14px] text-gray-500 leading-relaxed">
                                 {faq.a}
                             </p>
                         )}
                     </div>
                 ))}
             </div>
-        </section >
+        </section>
     )
 }
