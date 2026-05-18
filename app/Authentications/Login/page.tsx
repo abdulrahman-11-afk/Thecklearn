@@ -58,7 +58,7 @@ export default function Login() {
                 </div>
             </div>
 
-            <div className='w-[50%] h-[100vh] relative'>
+            <div className='w-[50%] h-[100vh] md:flex hidden relative'>
                 <Image
                     src="/Frame 2147258778.png"
                     alt="user"
