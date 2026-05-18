@@ -13,13 +13,6 @@ export default function Header() {
                 </nav>
                 <p className="md:hidden flex text-black text-3xl">☰</p>
                 <div className="md:flex hidden items-center gap-x-4">
-                    <Image
-                        src="/mdi-light_cart.png"
-                        alt="cancel"
-                        width={35}
-                        height={35}
-                        className="cursor-pointer"
-                    />
                     <Link href="/Authentications/register"> <button className="cursor-pointer">Sign Up</button></Link>
                     <Link href="/Authentications/Login"> <button className="bg-[#FF6B00] text-white hover:scale-105 duration-500 transition-transform cursor-pointer w-[80px] h-[37px] text-[15px] rounded-md">
                         Log in

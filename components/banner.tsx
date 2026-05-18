@@ -9,7 +9,6 @@ export default function Banner() {
 
     return (
         <div className="fixed left-0 top-0 z-50 w-full">
-            {/* Banner */}
             {showBanner && (
                 <div className="bg-[#005082] flex flex-col md:text-[12px] text-[8px] min-h-[52px] text-white items-center justify-center relative px-10">
                     <p className="font-bold">New Month Sale 🎉</p>
@@ -37,13 +36,11 @@ export default function Banner() {
                     <Link href="#faq"><p className="cursor-pointer hover:text-[#FF6B00] transition-colors">Help</p></Link>
                 </nav>
 
-                {/* Desktop Actions */}
                 <div className="md:flex hidden items-center gap-x-4">
-                    <Image src="/mdi-light_cart.png" alt="cart" width={35} height={35} className="cursor-pointer" />
-                    <button className="cursor-pointer">Sign Up</button>
-                    <button className="bg-[#FF6B00] text-white hover:scale-105 duration-500 transition-transform cursor-pointer w-[80px] h-[37px] text-[15px] rounded-md">
+                     <Link href="/Authentications/register"> <button className="cursor-pointer">Sign Up</button></Link>
+                    <Link href="/Authentications/Login"> <button className="bg-[#FF6B00] text-white hover:scale-105 duration-500 transition-transform cursor-pointer w-[80px] h-[37px] text-[15px] rounded-md">
                         Log in
-                    </button>
+                    </button></Link>
                 </div>
 
 
@@ -76,7 +73,6 @@ export default function Banner() {
                     </Link>
                 </nav>
                 <div className="flex items-center gap-4 px-6 py-5">
-                    <Image src="/mdi-light_cart.png" alt="cart" width={28} height={28} className="cursor-pointer" />
                      <Link href="/Authentications/register"> <button className="cursor-pointer">Sign Up</button></Link>
                     <Link href="/Authentications/Login"> <button className="bg-[#FF6B00] text-white hover:scale-105 duration-500 transition-transform cursor-pointer w-[80px] h-[37px] text-[15px] rounded-md">
                         Log in

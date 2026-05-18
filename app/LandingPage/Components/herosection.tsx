@@ -1,5 +1,6 @@
 import Image from "next/image"
 import Carousel from "./CarouselSection"
+import Link from "next/link"
 export default function Herosection() {
     return (
         <section>
@@ -18,12 +19,15 @@ export default function Herosection() {
                         mentors.
                     </p>
                     <div className="flex items-center md:justify-start justify-center gap-2  md:gap-x-4">
+                       <Link href="Authentications/register">
                         <button className="md:w-[130px] w-[80px] md:h-[40px] h-[30px] hover:scale-105 duration-500 cursor-pointer text-white rounded-md bg-[#FF6B00] md:text-[16px] text-[10px]">
                             Get started
-                        </button>
-                        <button className="border hover:bg-black hover:text-white cursor-pointer duration-500  border-[#6F6A6A] md:text-[16px] text-[12px]  text-[#6F6A6A] md:w-[200px] w-[140px] rounded-sm h-[30px] md:h-[40px]">
-                            Speak with an Advisor
-                        </button>
+                        </button></Link>
+                        <Link href="#programs">
+                            <button className="border hover:bg-black hover:text-white cursor-pointer duration-500  border-[#6F6A6A] md:text-[16px] text-[12px]  text-[#6F6A6A] md:w-[200px] w-[140px] rounded-sm h-[30px] md:h-[40px]">
+                                Our Ready Courses
+                            </button>
+                        </Link>
                     </div>
                     <div className="flex items-center md:justify-start justify-center gap-2 md:gap-4">
                         <div className="flex -space-x-3">

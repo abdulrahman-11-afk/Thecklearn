@@ -4,7 +4,7 @@ import { CourseData } from '@/data/courseData'
 
 export default function Aside({ course }: { course: CourseData }) {
     const card = (
-        <div className="flex flex-col gap-5">
+        <div className="flex flex-col gap-5 ">
             <div className="flex justify-between items-center">
                 <div className="flex items-center gap-2">
                     <h2 className="text-[28px] md:text-[32px] font-bold">{course.price}</h2>
@@ -18,9 +18,6 @@ export default function Aside({ course }: { course: CourseData }) {
             <div className="flex flex-col gap-3">
                 <button className="w-full bg-[#FF6B00] h-[48px] rounded-lg text-white font-medium hover:opacity-90 transition">
                     Buy Course Now
-                </button>
-                <button className="w-full bg-[#FF6B0020] h-[48px] rounded-lg font-medium flex items-center justify-center gap-2">
-                    <BsCart3 className="w-5 h-5" /> Add to Cart
                 </button>
             </div>
             <div className="flex flex-col gap-2 text-[13px] md:text-sm">
@@ -50,7 +47,7 @@ export default function Aside({ course }: { course: CourseData }) {
 
     return (
         <>
-            <div className="bg-white rounded-xl shadow-md p-5 md:hidden">
+            <div className="bg-white rounded-xl shadow-md p-5  md:hidden">
                 {card}
             </div>
 
