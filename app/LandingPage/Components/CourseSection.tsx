@@ -11,7 +11,7 @@ export default function Course() {
         instructor: "Peter Ayeni",
         oldPrice: "N50,000",
         price: "N10,000",
-        link: "/BuyCourse/web-development"   // ← matches id in courseData.ts
+        link: "/BuyCourse/web-development" 
     },
     {
         id: 2,
@@ -22,7 +22,7 @@ export default function Course() {
         instructor: "Oluwasegun",
         oldPrice: "N50,000",
         price: "N30,000",
-        link: "/BuyCourse/ui-ux-design"      // ← matches id in courseData.ts
+        link: "/BuyCourse/ui-ux-design"      
     },
     {
         id: 3,
@@ -33,7 +33,7 @@ export default function Course() {
         instructor: "Bidemi",
         oldPrice: "N50,000",
         price: "N30,000",
-        link: "/BuyCourse/data-analytics"    // ← matches id in courseData.ts
+        link: "/BuyCourse/data-analytics"    
     }
 ];
     return (

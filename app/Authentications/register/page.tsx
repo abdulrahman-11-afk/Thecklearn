@@ -6,7 +6,7 @@ import { FcGoogle } from "react-icons/fc"
 
 export default function Register() {
     return (
-        <div className='h-[100vh] w-[100%] flex items-center justify-center'>
+        <div className='h-[100vh] w-[100%] flex items-center justify-center bg-white text-black'>
             <div className='flex w-[50%] justify-center items-center h-[100vh] flex-col'>
                 <div className='flex flex-col gap-6'>
                     <div className='flex flex-col gap-2'>

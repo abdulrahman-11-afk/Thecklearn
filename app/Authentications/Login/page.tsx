@@ -6,7 +6,7 @@ import { FcGoogle } from "react-icons/fc"
 
 export default function Login() {
     return (
-        <div className='h-[100vh] w-[100%] flex items-center justify-center'>
+        <div className='h-[100vh] w-[100%] flex items-center justify-center bg-white text-black'>
             <div className='flex w-[50%] justify-center items-center h-[100vh] flex-col'>
                 <div className='flex flex-col gap-6'>
                     <div className='flex flex-col gap-2'>
@@ -42,12 +42,14 @@ export default function Login() {
                         <p>Remember me</p>
                     </div>
 
-                    <button
-                        type="submit"
-                        className='flex items-center justify-center gap-2 transition text-[#FFFFFF] text-sm w-[350px] h-[40px] bg-[#FF6B00] rounded-sm border border-[#E6E6E6] hover:opacity-90'
-                    >
-                        Log in
-                    </button>
+                    <Link href="/Dashboard/Courses">
+                        <button
+                            type="submit"
+                            className='flex items-center justify-center gap-2 transition text-[#FFFFFF] text-sm w-[350px] h-[40px] bg-[#FF6B00] rounded-sm border border-[#E6E6E6] hover:opacity-90'
+                        >
+                            Log in
+                        </button>
+                    </Link>
 
                     <p className='text-sm text-[#6F6A6A] flex justify-center pt-5'>
                         Don&apos;t have an account?{' '}

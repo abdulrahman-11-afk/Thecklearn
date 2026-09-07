@@ -17,7 +17,7 @@ export default function Header() {
                     <Link href="/Authentications/Login"> <button className="bg-[#FF6B00] text-white hover:scale-105 duration-500 transition-transform cursor-pointer w-[80px] h-[37px] text-[15px] rounded-md">
                         Log in
                     </button></Link>
-        </div>
+                </div>
             </header >
         </div >
     )

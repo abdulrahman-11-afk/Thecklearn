@@ -18,7 +18,6 @@ export default function Carousel() {
     return (
         <div className="flex items-center pt-10 pt:mt-0 md:mx-0 mx-4 flex-col gap-4 ">
             <div className="relative md:w-[620px] w-full md:mx-auto overflow-hidden rounded-xl">
-                {/* Image */}
                 <div
                     className="flex transition-transform  duration-500 ease-in-out"
                     style={{ transform: `translateX(-${current * 100}%)` }}
